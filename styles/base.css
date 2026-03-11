@@ -86,12 +86,8 @@ nav a:hover {
 }
 
 .about-grid img {
-    width: 128px;
-    /* standard profile picture size */
-    height: 128px;
-    object-fit: cover;
-    border-radius: 6px;
-}
+    width: 120px;
+   
 
 /* ===== Location ===== */
 .location-title {
