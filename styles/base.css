@@ -9,6 +9,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f5f5f5;
+  line-height: 1.5;
 }
 
 /* ===== Header ===== */
@@ -16,12 +17,12 @@ header {
   background-color: #1f4f75;
   color: white;
   text-align: center;
-  padding: 1.2rem;
+  padding: 1rem 0;
 }
 
 #course-title {
   font-size: 1.3rem;
-  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 /* ===== Navigation ===== */
@@ -29,38 +30,40 @@ nav {
   background-color: #333;
   display: flex;
   justify-content: space-around;
-  padding: 0.8rem 0;
+  padding: 0.7rem 0;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
+  transition: background-color 0.2s ease;
 }
 
 nav a:hover {
   background-color: #555;
+  /* no layout shift */
 }
 
-/* ===== Layout ===== */
-.layout {
+/* ===== Main (REQUIRED RULE – FIXED) ===== */
+main {
+  max-width: 1100px;
+  margin: 1.5rem auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1.5rem;
-  max-width: 1100px;
-  margin: auto;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 /* ===== Cards ===== */
 .card {
-  background-color: white;
+  background-color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 6px;
   padding: 1rem;
 }
 
-/* ===== Card Title ===== */
+/* ===== Card Titles ===== */
 .card-title {
   background-color: #1f4f75;
   color: white;
@@ -95,8 +98,8 @@ nav a:hover {
 /* ===== Location ===== */
 .location-title {
   text-align: center;
-  font-weight: bold;
   margin: 1.2rem 0 0.5rem;
+  font-weight: bold;
 }
 
 .location-grid {
