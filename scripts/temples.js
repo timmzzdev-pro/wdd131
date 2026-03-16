@@ -1,12 +1,4 @@
-// Footer Year
-document.getElementById("year").textContent =
-new Date().getFullYear();
-
-// Last Modified
-document.getElementById("lastModified").textContent =
-document.lastModified;
-
-// Hamburger Menu
+document.getElementById("lastModified").textContent = document.lastModified;
 
 const menuButton = document.querySelector("#menu-button");
 const navMenu = document.querySelector("#nav-menu");

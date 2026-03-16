@@ -8,18 +8,20 @@
         display: flex !important;
         flex-direction: row;
         gap: 2rem;
-        background: none;
         width: auto;
+        background: none;
+        margin-top: 0;
     }
 
     nav a {
         padding: 0;
     }
 
-    /* 3 COLUMN GRID */
+    /* 3 COLUMN GALLERY */
 
     .gallery {
         grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
 
 }

@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background: #f2f2f2;
 }
 
 /* HEADER */
@@ -21,7 +22,8 @@ header {
 }
 
 header h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 /* HAMBURGER */
@@ -34,25 +36,26 @@ header h2 {
     cursor: pointer;
 }
 
-/* NAVIGATION */
+/* NAV */
 
 nav {
     display: none;
     flex-direction: column;
     width: 100%;
     background: #4b1366;
+    margin-top: 1rem;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 1rem;
+    padding: .8rem;
     text-align: center;
-    font-weight: bold;
+    font-size: 1rem;
 }
 
 nav a:hover {
-    background: #6d1f8f;
+    background: #6b1d8f;
 }
 
 nav.open {
@@ -62,39 +65,38 @@ nav.open {
 /* MAIN */
 
 main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 1rem;
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem 1rem;
     text-align: center;
 }
 
-h1 {
-    margin: 1.5rem 0;
+main h1 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
 }
 
-/* GALLERY GRID */
+/* GALLERY */
 
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 figure {
-    background: #f4f4f4;
-    padding: .5rem;
-    border-radius: 5px;
+    background: white;
+    padding: .6rem;
 }
 
 figure img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 figcaption {
     margin-top: .5rem;
-    color: #4b1366;
+    color: #5a0d7a;
     font-size: .9rem;
 }
 
@@ -105,6 +107,5 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
     font-size: .9rem;
 }
