@@ -1,36 +1,20 @@
-/* ===== Reset ===== */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===== Body ===== */
-
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #f5f5f5;
-    line-height: 1.5;
+    background: #f5f5f5;
 }
 
-/* ===== Header ===== */
-
 header {
-    background-color: #1f4f75;
+    background: #1f4f75;
     color: white;
     text-align: center;
     padding: 1rem;
 }
-
-/* ===== Title ===== */
-
-header h2 {
-    font-size: 1.5rem;
-    margin-bottom: .5rem;
-}
-
-/* ===== Hamburger Button ===== */
 
 #menu-button {
     font-size: 2rem;
@@ -38,13 +22,10 @@ header h2 {
     border: none;
     color: white;
     cursor: pointer;
-    margin-bottom: .5rem;
 }
 
-/* ===== Navigation ===== */
-
 nav {
-    background-color: #333;
+    background: #333;
     display: none;
     flex-direction: column;
 }
@@ -52,52 +33,35 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    padding: .6rem;
-    transition: background-color 0.2s ease;
+    padding: .7rem;
 }
 
 nav a:hover {
-    background-color: #555;
+    background: #555;
 }
 
 nav.open {
     display: flex;
 }
 
-/* ===== Main ===== */
-
 main {
     max-width: 1100px;
     margin: 1.5rem auto;
-    padding: 0 1rem;
+    padding: 1rem;
     text-align: center;
 }
-
-/* ===== Heading ===== */
-
-main h1 {
-    margin-bottom: 2rem;
-}
-
-/* ===== Gallery Grid ===== */
 
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
 }
-
-/* ===== Image Cards ===== */
 
 figure {
     background: white;
     border: 1px solid #ccc;
-    border-radius: 6px;
     padding: .5rem;
-    text-align: center;
 }
-
-/* ===== Images ===== */
 
 figure img {
     width: 100%;
@@ -105,20 +69,15 @@ figure img {
     object-fit: cover;
 }
 
-/* ===== Captions ===== */
-
 figcaption {
     margin-top: .5rem;
-    font-size: .9rem;
     color: #1f4f75;
 }
 
-/* ===== Footer ===== */
-
 footer {
-    background-color: #1f4f75;
+    background: #1f4f75;
     color: white;
     text-align: center;
-    padding: 1.2rem;
+    padding: 1rem;
     margin-top: 2rem;
 }
