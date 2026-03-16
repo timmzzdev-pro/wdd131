@@ -1,27 +1,18 @@
-@media (min-width:768px) {
+@media (min-width:768px){
 
-    #menu-button {
-        display: none;
-    }
+#menu-button{
+display:none;
+}
 
-    nav {
-        display: flex !important;
-        flex-direction: row;
-        gap: 2rem;
-        width: auto;
-        background: none;
-        margin-top: 0;
-    }
+nav{
+display:flex !important;
+flex-direction:row;
+justify-content:center;
+gap:2rem;
+}
 
-    nav a {
-        padding: 0;
-    }
-
-    /* 3 COLUMN GALLERY */
-
-    .gallery {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }
+.gallery{
+grid-template-columns:repeat(3,1fr);
+}
 
 }
