@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width:768px) {
 
     #menu-button {
         display: none;
@@ -16,7 +16,10 @@
         padding: 0;
     }
 
+    /* 3 COLUMN GRID */
+
     .gallery {
         grid-template-columns: repeat(3, 1fr);
     }
+
 }
