@@ -1,15 +1,13 @@
-// ===== Footer Dates =====
-const yearSpan = document.getElementById("year");
-const modifiedSpan = document.getElementById("lastModified");
+// Footer Dates
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
 
-yearSpan.textContent = new Date().getFullYear();
-modifiedSpan.textContent = document.lastModified;
-
-// ===== Hamburger Menu =====
+// Hamburger Menu
 const menuButton = document.getElementById("menu-button");
 const navMenu = document.getElementById("nav-menu");
 
 menuButton.addEventListener("click", () => {
   navMenu.classList.toggle("open");
-  menuButton.textContent = navMenu.classList.contains("open") ? "✖" : "☰";
+  menuButton.textContent =
+    navMenu.classList.contains("open") ? "✖" : "☰";
 });
