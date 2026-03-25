@@ -4,68 +4,67 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Madagascar</title>
+  <title>Madagascar</title>
 
-    <meta name="description" content="Madagascar country information and weather page by Timilehin Olajide">
-    <meta name="author" content="Timilehin Olajide">
+  <meta name="description" content="Madagascar country information and weather page by Timilehin Olajide">
+  <meta name="author" content="Timilehin Olajide">
 
-    <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place.css">
 
-    <script src="scripts/place.js" defer></script>
+  <script src="scripts/place.js" defer></script>
 
 </head>
 
 <body>
 
-    <header>
-        <h1>Madagascar</h1>
-    </header>
+  <header>
+    <h1>Madagascar</h1>
+  </header>
 
-    <!-- HERO IMAGE -->
-    <picture>
-        <source srcset="imag" media="(min-width: 768px)">
-        <img src="images/madagascar-small.webp" alt="Madagascar wildlife" class="hero">
-    </picture>
+  <!-- HERO IMAGE (FIXED) -->
+  <picture>
+    <source srcset="images/madagascar-large.webp" media="(min-width: 768px)">
+    <img src="images/madagascar-small.webp" alt="Madagascar wildlife" class="hero">
+  </picture>
 
-    <main>
+  <main>
 
-        <!-- DATA SECTION -->
-        <section class="card data">
-            <h2>Data</h2>
+    <section class="card data">
+      <h2>Data</h2>
 
-            <p><strong>Area:</strong> 587,041 sq km</p>
-            <p><strong>Population:</strong> 27,691,018</p>
-            <p><strong>Capital:</strong> Antananarivo</p>
-            <p><strong>Languages:</strong> Malagasy, French</p>
-            <p><strong>Currency:</strong> Malagasy Ariary</p>
-            <p><strong>Time Zone:</strong> UTC+3</p>
-            <p><strong>Calling Code:</strong> +261</p>
-            <p><strong>Internet TLD:</strong> .mg</p>
+      <p><strong>Area:</strong> 587,041 sq km</p>
+      <p><strong>Population:</strong> 27,691,018</p>
+      <p><strong>Capital:</strong> Antananarivo</p>
+      <p><strong>Languages:</strong> Malagasy, French</p>
+      <p><strong>Currency:</strong> Malagasy Ariary</p>
+      <p><strong>Time Zone:</strong> UTC+3</p>
+      <p><strong>Calling Code:</strong> +261</p>
+      <p><strong>Internet TLD:</strong> .mg</p>
 
-        </section>
+    </section>
 
-        <!-- WEATHER SECTION -->
-        <section class="card weather">
-            <h2>Weather</h2>
+    <section class="card weather">
+      <h2>Weather</h2>
 
-            <img src="images/weather.svg" alt="weather icon" class="weather-icon">
+      <!-- SVG REQUIRED -->
+      <img src="images/weather.svg" alt="weather icon" class="weather-icon">
 
-            <p><strong>Temperature:</strong> <span id="temp">10</span> °C</p>
-            <p><strong>Conditions:</strong> Partly Cloudy</p>
-            <p><strong>Wind:</strong> <span id="wind">5</span> km/h</p>
-            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+      <p><strong>Temperature:</strong> <span id="temp">10</span> °C</p>
+      <p><strong>Conditions:</strong> Partly Cloudy</p>
+      <p><strong>Wind:</strong> <span id="wind">5</span> km/h</p>
+      <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
 
-        </section>
+    </section>
 
-    </main>
+  </main>
 
-    <footer>
-        <p>© <span id="year"></span> 🌸 Timilehin Olajide 🌸 Madagascar</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
-    </footer>
+  <footer>
+    <p>© <span id="year"></span> 🌸 Timilehin Olajide 🌸 Madagascar</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
 
 </body>
 
