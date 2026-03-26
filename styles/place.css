@@ -27,13 +27,13 @@ header {
 header h1 {
     font-size: 2rem;
 }
-
-/* HERO */
+    
+/* HERO IMAGE */
 .hero {
     width: 100%;
+    height: auto;
     display: block;
 }
-
 /* MAIN */
 main {
     padding: 1rem;
