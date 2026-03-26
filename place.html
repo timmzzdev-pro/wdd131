@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,12 +7,15 @@
 
   <title>Madagascar</title>
 
+  <!-- FIXED: meta tags INSIDE head -->
   <meta name="description" content="Madagascar country information and weather page by Timilehin Olajide">
   <meta name="author" content="Timilehin Olajide">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="styles/place.css">
 
-  <script defer src="scripts/place.js"></script>
+  <!-- JS MUST BE IN HEAD -->
+  <script src="scripts/place.js" defer></script>
 </head>
 
 <body>
@@ -24,12 +26,15 @@
 
   <!-- HERO IMAGE -->
   <picture>
-    <source srcset="images/madagascar-large.webp" media="(min-width: 768px)">
-    <img src="images/madagascar-large.webp" alt="Madagascar wildlife" class="hero">
-  </picture>
+    <source srcset="images/madagascar-large.webp" media="(min-width: 460px)">
+    <img src="images/madagascar-small.webp" alt="Madagascar wildlife" class="hero">
+    <source src="images/madagascar-small.webp" media="(min-width: 120px)">
+    <img src="images/madagascar-small.webp" alt="Madagascar wildlife" class="hero">
+    </picture>
 
   <main>
 
+    <!-- DATA -->
     <section class="card data">
       <h2>Data</h2>
 
@@ -41,19 +46,19 @@
       <p><strong>Time Zone:</strong> UTC+3</p>
       <p><strong>Calling Code:</strong> +261</p>
       <p><strong>Internet TLD:</strong> .mg</p>
-
     </section>
 
+    <!-- WEATHER -->
     <section class="card weather">
       <h2>Weather</h2>
 
+      <!-- FIXED NAME -->
       <img src="images/weather.svg" alt="weather icon" class="weather-icon">
 
       <p><strong>Temperature:</strong> <span id="temp">10</span> °C</p>
       <p><strong>Conditions:</strong> Partly Cloudy</p>
       <p><strong>Wind:</strong> <span id="wind">5</span> km/h</p>
       <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
-
     </section>
 
   </main>
@@ -66,4 +71,3 @@
 </body>
 
 </html>
-```
