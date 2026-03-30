@@ -70,21 +70,22 @@ const temples = [
   location: "Accra, Ghana",
   dedicated: "2004, January, 11",
   area: 17500,
-  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Accra_Ghana_Temple.jpg"
+  imageUrl: "images/accra.jpg"
 },
 {
-  templeName: "Salt Lake Temple",
-  location: "Salt Lake City, Utah, USA",
-  dedicated: "1893, April, 6",
-  area: 253000,
-  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Salt_Lake_Temple%2C_Utah_-_Sept_2004-2.jpg"
+  
+  templeName: "Aba Nigeria",
+  location: "Aba, Nigeria",
+  dedicated: "2005, August, 7",
+  area: 11500,
+  imageUrl: "images/aba.jpg"
 },
 {
   templeName: "Paris France",
   location: "Paris, France",
   dedicated: "2017, May, 21",
   area: 44000,
-  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Paris_France_Temple.jpg"
+  imageUrl: "images/paris.jpg"
 }
 ];
 
