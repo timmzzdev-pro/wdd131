@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="author" content="Timilehin Olajide">
     <meta name="description"
-        content="This page allows users to submit a detailed product review including rating, features, and installation date.">
+        content="Submit your product review with ratings, installation date, useful features, and comments for feedback.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Product Review</title>
 
     <link rel="stylesheet" href="styles/form.css">
@@ -23,7 +22,7 @@
     <main>
         <form method="get" action="review.html">
 
-            <!-- Product -->
+            <!-- Product Name -->
             <label for="product">Product Name *</label>
             <select id="product" name="product" required>
                 <option value="" disabled selected>Select a Product ...</option>
@@ -32,24 +31,12 @@
             <!-- Rating -->
             <fieldset>
                 <legend>Overall Rating *</legend>
-
                 <div class="rating">
-
-                    <input type="radio" id="rate1" name="rating" value="1" required>
-                    <label for="rate1">☆</label>
-
-                    <input type="radio" id="rate2" name="rating" value="2" required>
-                    <label for="rate2">☆☆</label>
-
-                    <input type="radio" id="rate3" name="rating" value="3" required>
-                    <label for="rate3">☆☆☆</label>
-
-                    <input type="radio" id="rate4" name="rating" value="4" required>
-                    <label for="rate4">☆☆☆☆</label>
-
-                    <input type="radio" id="rate5" name="rating" value="5" required>
-                    <label for="rate5">☆☆☆☆☆</label>
-
+                    <label for="rating1">☆<input type="radio" id="rating1" name="rating" value="1" required></label>
+                    <label for="rating2">☆☆<input type="radio" id="rating2" name="rating" value="2" required></label>
+                    <label for="rating3">☆☆☆<input type="radio" id="rating3" name="rating" value="3" required></label>
+                    <label for="rating4">☆☆☆☆<input type="radio" id="rating4" name="rating" value="4" required></label>
+                    <label for="rating5">☆☆☆☆☆<input type="radio" id="rating5" name="rating" value="5" required></label>
                 </div>
             </fieldset>
 
@@ -59,32 +46,27 @@
 
             <!-- Features -->
             <fieldset class="checkbox-group">
-                <legend>Useful Features (Check all that apply)</legend>
-
-                <input type="checkbox" id="durability" name="features" value="durability">
-                <label for="durability">Durability</label>
-
-                <input type="checkbox" id="ease" name="features" value="ease">
-                <label for="ease">Ease of Use</label>
-
-                <input type="checkbox" id="performance" name="features" value="performance">
-                <label for="performance">Performance</label>
-
-                <input type="checkbox" id="design" name="features" value="design">
-                <label for="design">Design</label>
+                <legend>Which features did you find useful? <em>(Check all that apply)</em></legend>
+                <label for="feature1"><input type="checkbox" id="feature1" name="features" value="durability">
+                    Durability</label>
+                <label for="feature2"><input type="checkbox" id="feature2" name="features" value="ease"> Ease of
+                    Use</label>
+                <label for="feature3"><input type="checkbox" id="feature3" name="features" value="performance">
+                    Performance</label>
+                <label for="feature4"><input type="checkbox" id="feature4" name="features" value="design">
+                    Design</label>
             </fieldset>
 
-            <!-- Review -->
+            <!-- Written Review -->
             <label for="review">Written Review (Optional)</label>
             <textarea id="review" name="review"></textarea>
 
-            <!-- Name -->
+            <!-- User Name -->
             <label for="username">Your Name (Optional)</label>
             <input type="text" id="username" name="username">
 
             <!-- Submit -->
             <input type="submit" value="Post Review">
-
         </form>
     </main>
 
