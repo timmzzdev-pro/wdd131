@@ -12,14 +12,16 @@
 
     <link rel="stylesheet" href="main.css">
     <script src="app.js" defer></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header class="nav-bar">
         <div class="brand">
-            <img src="images/rccg-logo.png" class="logo">
+            <img src="images/rccg-logo.png" alt="Church Logo" class="logo">
             <h2>RCCG Miracle Pavilion Area 16</h2>
         </div>
 
@@ -31,48 +33,83 @@
         </nav>
     </header>
 
-<section class="hero">
-    <div class="hero-overlay">
-        <h1 class="hero-title">RCCG Miracle Pavilion Area 16</h1>
-        <p class="hero-text">jesus christ yesterday today and for ever heb13-4</p>
-        <button class="hero-btn" onclick="scrollToSection()">Explore</button>
-    </div>
-</section>
 
-    <section class="announcement-zone">
-        <h2>📢 Latest Announcement</h2>
-        <div id="announcementDisplay">No announcement yet</div>
-    </section>
+    <!-- HERO SECTION -->
+    <section class="hero">
 
-    <section class="leaders container">
+    <section class="hero">
     
-        <h2 class="section-title">Church Leadership</h2>
+        <!-- HERO IMAGE -->
+        <img src="images/hero.jpg" alt="Church worship service" class="hero-img">
     
-        <div class="leader-grid">
-    
-            <div class="leader-card">
-                <img src="images/e-a-adeboye.jpg" alt="General Overseer">
-                <h3>Pastor E.A. Adeboye</h3>
-                <p>General Overseer</p>
-            </div>
-    
-            <div class="leader-card">
-                <img src="images/pst-ojomo.jpeg" alt="Parish Pastor">
-                <h3>Pastor E.O. Ojomo</h3>
-                <p>Pastor in Charge of Parish</p>
-            </div>
-    
+        <!-- CONTENT -->
+        <div class="hero-content">
+            <h1 class="hero-title">RCCG Miracle Pavilion Area 16</h1>
+            <p class="hero-text">
+                Jesus Christ the same yesterday, today and forever – Hebrews 13:8
+            </p>
+            <button class="hero-btn" onclick="scrollToSection()">Explore</button>
         </div>
     
     </section>
+        
+        </section>
 
+    </section>
+
+    <!-- ANNOUNCEMENT -->
+    <section class="announcement-zone">
+        <h2 class="section-title">📢 Latest Announcement</h2>
+        <div id="announcementDisplay">No announcement yet</div>
+    </section>
+
+<section class="about-rccg container">
+
+    <h2 class="section-title">About RCCG</h2>
+
+    <p class="about-text">
+        The (RCCG) is a global church with a vision to spread the message of Jesus
+        Christ across the world. Founded in Nigeria, RCCG is committed to raising people of purpose, holiness, and
+        excellence through the teaching of God’s word, prayer, and impactful community outreach.
+    </p>
+
+    <a href="https://en.wikipedia.org/wiki/Redeemed_Christian_Church_of_God" target="_blank" class="learn-more-btn">
+        Learn More About RCCG
+    </a>
+
+</section>
+
+    <!-- LEADERS -->
+    <section class="leaders container">
+
+        <h2 class="section-title">Church Leadership</h2>
+
+        <div class="leader-grid">
+
+            <div class="leader-card">
+                <img src="images/e-a-adeboye.jpg" alt="Pastor E.A. Adeboye">
+                <h3>Pastor E.A. Adeboye</h3>
+                <p>General Overseer</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/pst-ojomo.jpeg" alt="Pastor E.O. Ojomo">
+                <h3>Pastor E.O. Ojomo</h3>
+                <p>Pastor in Charge of Parish</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
     <footer class="site-footer">
         <p>&copy; 2026 RCCG Miracle Pavilion</p>
 
         <div class="social-icons">
-            <a href="#">Facebook</a>
-            <a href="mailto:yourchurch@email.com">Email</a>
-            <a href="https://wa.me/234XXXXXXXXXX">WhatsApp</a>
+            <a href="https://www.facebook.com/share/17EPttXoLZ/"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="mailto:rccg.miracle.pavilion16@gmail.com"><img src="images/email.png" alt="Email"></a>
+            <a href="https://chat.whatsapp.com/HJmZYhMofSSAXOuFyDZmOG?mode=gi_t"><img src="images/whatsapp.png" alt="WhatsApp"></a>
         </div>
 
         <a href="sources.html">References</a>
