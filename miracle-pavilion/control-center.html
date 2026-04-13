@@ -1,39 +1,58 @@
-<header class="nav-bar">
-    <div class="brand">
-        <img src="assets/images/brand-logo.png" alt="Church Logo" class="logo">
-        <h2>Faith Connect</h2>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
 
-    <nav>
-        <a href="home.html">Home</a>
-        <a href="ministries.html">Programs</a>
-        <a href="reach-us.html">Contact</a>
-        <a href="control-center.html">Admin</a>
-    </nav>
-</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h2>Admin Control</h2>
+    <title>Admin | RCCG Miracle Pavilion</title>
 
-<input type="password" id="adminKey" placeholder="Enter Password">
-<button onclick="grantAccess()">Login</button>
+    <link rel="stylesheet" href="main.css">
+    <script src="app.js" defer></script>
+</head>
 
-<div id="panel" class="hidden">
-    <input type="text" id="announcementInput" placeholder="Type announcement">
-    <button onclick="publishAnnouncement()">Publish</button>
-</div>
+<body>
 
-<footer class="site-footer">
-    <div class="footer-content">
-
-        <p>&copy; 2026 Faith Connect Church. All rights reserved.</p>
-
-        <div class="social-icons">
-            <a href="#" title="Facebook">🌐 Facebook</a>
-            <a href="mailto:yourchurch@email.com" title="Email">📧 Email</a>
-            <a href="https://wa.me/234XXXXXXXXXX" title="WhatsApp">💬 WhatsApp</a>
+    <header class="nav-bar">
+        <div class="brand">
+            <img src="rccg-logo.png" class="logo">
+            <h2>RCCG Miracle Pavilion</h2>
         </div>
 
-        <a href="sources.html" class="ref-link">References</a>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="ministries.html">Programs</a>
+            <a href="reach-us.html">Contact</a>
+            <a href="control-center.html">Admin</a>
+        </nav>
+    </header>
 
-    </div>
-</footer>
+    <main class="container">
+
+        <h2>Admin Control</h2>
+
+        <input type="password" id="adminKey" placeholder="Enter Password">
+        <button onclick="grantAccess()">Login</button>
+
+        <div id="panel" class="hidden">
+            <input type="text" id="announcementInput">
+            <button onclick="publishAnnouncement()">Post</button>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 RCCG Miracle Pavilion</p>
+
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="mailto:yourchurch@email.com">Email</a>
+            <a href="https://wa.me/234XXXXXXXXXX">WhatsApp</a>
+        </div>
+
+        <a href="sources.html">References</a>
+    </footer>
+
+</body>
+
+</html>
