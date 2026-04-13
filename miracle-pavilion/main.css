@@ -55,13 +55,62 @@ nav a {
     text-decoration: none;
 }
 
+/* HERO SECTION */
 .hero {
-    height: 80vh;
-    background: url('hero.jpg') center/cover;
+    height: 90vh;
+    background: url('hero.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+/* DARK OVERLAY */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* CONTENT */
+.hero-overlay {
+    position: relative;
+    text-align: center;
     color: white;
+    z-index: 1;
+}
+
+/* TITLE */
+.hero-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+.hero-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.hero-btn {
+    padding: 12px 25px;
+    background: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #1e8449;
 }
 
 .container {
@@ -76,6 +125,48 @@ nav a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
+}
+
+/* LEADERS SECTION */
+.leader-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* CARD */
+.leader-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.leader-card:hover {
+    transform: translateY(-8px);
+}
+
+/* IMAGE */
+.leader-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* NAME */
+.leader-card h3 {
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+/* TITLE */
+.leader-card p {
+    color: #666;
 }
 
 /* MAIN CARD */
@@ -115,14 +206,19 @@ nav a {
 }
 
 @media (max-width: 768px) {
-    .section-title {
+    .hero {
+        height: 70vh;
+    }
+
+    .hero-title {
         font-size: 1.8rem;
     }
 
-    .program-box {
-        padding: 20px;
+    .hero-text {
+        font-size: 1rem;
     }
 }
+
 
 footer {
     background: #1e272e;
