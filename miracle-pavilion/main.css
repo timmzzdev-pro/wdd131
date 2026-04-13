@@ -36,9 +36,9 @@
 
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: 'Poppins',sans-serif;
     background: #f4f8fb;
-        }
+}
 
 
 .nav-bar {
@@ -73,14 +73,14 @@ nav a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(83, 195, 133, 0.929);
 }
 
 /* CONTENT */
 .hero-overlay {
     position: relative;
     text-align: center;
-    color: white;
+    color: rgba(216, 220, 216, 0.945);
     z-index: 1;
 }
 
@@ -101,7 +101,7 @@ nav a {
 .hero-btn {
     padding: 12px 25px;
     background: var(--secondary);
-    color: white;
+    color: rgba(178, 181, 175, 0.816);
     border: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -110,7 +110,7 @@ nav a {
 }
 
 .hero-btn:hover {
-    background: #1e8449;
+    background: #17b558;
 }
 
 .container {
@@ -188,23 +188,33 @@ nav a {
 
 /* TITLE INSIDE CARD */
 .program-box h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     font-size: 1.3rem;
     color: var(--primary);
-    margin-bottom: 10px;
 }
 
-/* TEXT */
 .program-box p {
-    margin: 5px 0;
-    color: #444;
-    font-size: 0.95rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.program-box {
+    border-left: 5px solid var(--secondary);
 }
 
 .highlight {
     border: 2px solid var(--secondary);
     background: linear-gradient(135deg, #ffffff, #f0fff4);
 }
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
 
+    .hero-text {
+        font-size: 1rem;
+    }
+}
 @media (max-width: 768px) {
     .hero {
         height: 70vh;
