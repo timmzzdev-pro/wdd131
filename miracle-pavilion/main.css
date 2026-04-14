@@ -95,7 +95,9 @@ nav a {
     text-align: center;
     color: white;
 }
-
+.hero {
+    min-height: 800px;
+}
 .hero-title {
     font-size: 3rem;
     font-weight: 900;
