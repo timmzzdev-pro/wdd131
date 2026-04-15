@@ -107,6 +107,87 @@ nav a {
     background: #1e8449;
 }
 
+/* ================= PROGRAM HERO ================= */
+.program-hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    /* flexible full screen */
+    overflow: hidden;
+}
+
+/* IMAGE */
+.program-hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 🔥 makes it fit perfectly */
+    z-index: 0;
+}
+
+/* DARK OVERLAY */
+.program-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* TEXT CONTENT */
+.program-hero-content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 90%;
+}
+
+/* TITLE */
+.program-hero-content h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+/* SUBTEXT */
+.program-hero-content p {
+    font-size: 1.2rem;
+}
+/* PROGRAM OVERLAY GRID */
+.program-overlay {
+    position: absolute;
+    bottom: 40px;
+    /* ✅ INSIDE hero now */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    z-index: 3;
+}
+.program-box {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+.program-box:hover {
+    transform: translateY(-12px) scale(1.03);
+}
+.container {
+    margin-top: 100px;
+}
+
 /* ================= SECTION TITLES ================= */
 .section-title {
     text-align: center;
@@ -415,3 +496,121 @@ form button:hover {
         text-align: center;
     }
 }
+@media (max-width: 768px) 
+{
+            .program-hero {
+            position: relative;
+            width: 100%;
+            min-height: 90vh;
+            overflow: hidden;
+        }
+    
+        /* IMAGE */
+        .program-hero-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+    
+        /* OVERLAY */
+        .program-hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+    
+        /* TEXT */
+        .program-hero-content {
+            position: absolute;
+            z-index: 2;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -35%);
+            text-align: center;
+            color: white;
+            width: 90%;
+        }
+    
+        .program-hero-content h1 {
+            font-size: 3rem;
+        }
+    
+        .program-hero-content p {
+            font-size: 1.2rem;
+        }
+    
+        /* PROGRAM CARDS */
+        .program-overlay {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 1100px;
+    
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            z-index: 3;
+        }
+    
+        /* CARD STYLE */
+        .program-box {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+    
+        .program-box:hover {
+            transform: translateY(-8px);
+        }
+    
+        /* MOBILE FIX */
+        @media (max-width: 768px) {
+    
+            .program-hero {
+                height: auto;
+                min-height: 80vh;
+                padding-bottom: 40px;
+            }
+    
+            .program-hero-content {
+                top: 30%;
+                transform: translate(-50%, -30%);
+            }
+    
+            .program-hero-content h1 {
+                font-size: 1.8rem;
+            }
+    
+            .program-hero-content p {
+                font-size: 0.95rem;
+            }
+    
+            .program-overlay {
+                position: relative;
+                bottom: unset;
+                left: unset;
+                transform: none;
+    
+                margin-top: 30px;
+                padding: 0 15px;
+    
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+    
+            .program-box {
+                padding: 18px;
+                font-size: 0.9rem;
+            }
+                }        }
