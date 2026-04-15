@@ -111,21 +111,22 @@ nav a {
 .program-hero {
     position: relative;
     width: 100%;
-    min-height: 100vh;
-    /* flexible full screen */
+    height: 90vh;
+    /* desktop height */
+    max-height: 700px;
+    /* prevents it from becoming too tall */
     overflow: hidden;
 }
 
 /* IMAGE */
 .program-hero-img {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* 🔥 makes it fit perfectly */
-    z-index: 0;
+    /* keeps image nicely cropped */
+    top: 0;
+    left: 0;
 }
 
 /* DARK OVERLAY */
@@ -141,9 +142,9 @@ nav a {
 .program-hero-content {
     position: absolute;
     z-index: 2;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     text-align: center;
     color: white;
     width: 90%;
@@ -162,18 +163,17 @@ nav a {
 /* PROGRAM OVERLAY GRID */
 .program-overlay {
     position: absolute;
-    bottom: 40px;
-    /* ✅ INSIDE hero now */
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
-    max-width: 1200px;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    gap: 15px;
     z-index: 3;
 }
+
 .program-box {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(8px);
@@ -614,3 +614,111 @@ form button:hover {
                 font-size: 0.9rem;
             }
                 }        }
+
+                @media (max-width: 768px) {
+
+    .program-hero {
+        height: 60vh;
+        max-height: 500px;
+    }
+
+    .program-hero-content {
+        top: 35%;
+        transform: translate(-50%, -35%);
+    }
+
+    .program-hero-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .program-hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .program-overlay {
+        position: relative;
+        margin-top: 20px;
+        transform: none;
+        left: unset;
+        bottom: unset;
+
+        grid-template-columns: 1fr;
+    }
+
+    .program-box {
+        padding: 16px;
+    }
+}@media (max-width: 768px) {
+
+    .program-hero {
+        height: 60vh;
+        max-height: 500px;
+    }
+
+    .program-hero-content {
+        top: 35%;
+        transform: translate(-50%, -35%);
+    }
+
+    .program-hero-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .program-hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .program-overlay {
+        position: relative;
+        margin-top: 20px;
+        transform: none;
+        left: unset;
+        bottom: unset;
+
+        grid-template-columns: 1fr;
+    }
+
+    .program-box {
+        padding: 16px;
+    }
+}
+@media (max-width: 768px) {
+
+    /* ❌ REMOVE HERO IMAGE */
+    .program-hero-img {
+        display: none;
+    }
+
+    /* CHANGE BACKGROUND INSTEAD */
+    .program-hero {
+        background: var(--primary);
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    /* REMOVE DARK OVERLAY */
+    .program-hero::after {
+        display: none;
+    }
+
+    /* FIX TEXT POSITION */
+    .program-hero-content {
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* STACK CARDS NICELY */
+    .program-overlay {
+        position: relative;
+        transform: none;
+        left: unset;
+        bottom: unset;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+}
