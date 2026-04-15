@@ -684,6 +684,15 @@ form button:hover {
 }
 @media (max-width: 768px) {
 
+    /* FIX MONTHLY VIGIL TEXT COLOR */
+    .program-box h3,
+    .program-box p {
+        color: #000 !important;
+    }
+}
+
+@media (max-width: 768px) {
+
     /* ❌ REMOVE HERO IMAGE */
     .program-hero-img {
         display: none;
@@ -721,4 +730,11 @@ form button:hover {
         gap: 15px;
     }
 
+}
+@media (max-width: 768px) {
+
+    .program-box.highlight h3,
+    .program-box.highlight p {
+        color: #000 !important;
+    }
 }
