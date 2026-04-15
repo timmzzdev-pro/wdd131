@@ -28,19 +28,28 @@
         </nav>
     </header>
 
-    <main class="container">
+<main class="admin-wrapper">
 
-        <h2>Admin Control</h2>
+    <div class="admin-card">
 
-        <input type="password" id="adminKey" placeholder="Enter Password">
-        <button onclick="grantAccess()">Login</button>
+        <h2 class="admin-title">Admin Control Panel</h2>
 
-        <div id="panel" class="hidden">
-            <input type="text" id="announcementInput">
-            <button onclick="publishAnnouncement()">Post</button>
+        <!-- LOGIN -->
+        <div class="login-box">
+            <input type="password" id="adminKey" placeholder="Enter Admin Password">
+            <button onclick="grantAccess()">Login</button>
         </div>
 
-    </main>
+        <!-- ADMIN PANEL -->
+        <div id="panel" class="hidden admin-panel">
+            <h3>Post Announcement</h3>
+            <input type="text" id="announcementInput" placeholder="Type announcement here...">
+            <button onclick="publishAnnouncement()">Publish</button>
+        </div>
+
+    </div>
+
+</main>
 <!-- FOOTER -->
 <footer class="site-footer">
     <p>&copy; 2026 RCCG Miracle Pavilion</p>

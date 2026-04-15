@@ -2,7 +2,7 @@
 function grantAccess() {
   const key = document.getElementById("adminKey").value;
 
-  if (key === "faith123") {
+  if (key === "timi8464") {
     document.getElementById("panel").classList.remove("hidden");
   } else {
     alert("Access Denied");
