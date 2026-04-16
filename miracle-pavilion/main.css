@@ -485,6 +485,7 @@ form button:hover {
     border-radius: 50%;
 }
 
+@/* ================= CLEAN MOBILE FIX ================= */
 @media (max-width: 768px) {
 
     /* REMOVE HERO IMAGE */
@@ -492,13 +493,14 @@ form button:hover {
         display: none;
     }
 
-    /* MAKE SECTION EXPAND FULLY */
+    /* HERO CONTAINER */
     .program-hero {
         background: var(--primary);
         height: auto;
-        min-height: auto;
+        /* 🔥 allows full content */
         max-height: none;
         overflow: visible;
+        /* 🔥 CRITICAL FIX */
         padding: 30px 15px;
     }
 
@@ -507,7 +509,7 @@ form button:hover {
         display: none;
     }
 
-    /* FIX TEXT */
+    /* TEXT */
     .program-hero-content {
         position: relative;
         top: unset;
@@ -524,32 +526,36 @@ form button:hover {
         font-size: 0.95rem;
     }
 
-    /* SHOW ALL CARDS (VERY IMPORTANT FIX) */
+    /* PROGRAM CARDS */
     .program-overlay {
         position: relative;
-        transform: none;
         left: unset;
         bottom: unset;
+        transform: none;
 
         width: 100%;
+        padding: 0;
+
         display: grid;
         grid-template-columns: 1fr;
+        /* one per row */
         gap: 15px;
     }
 
-    /* CARD STYLE */
+    /* CARDS */
     .program-box {
         padding: 18px;
         font-size: 0.9rem;
     }
 
-    /* FIX TEXT COLOR */
+    /* FIX TEXT COLORS */
     .program-box h3,
     .program-box p {
-        color: #000 !important;
+        color: #000;
     }
 
-    .program-box.highlight {
-        background: #fff;
+    .program-box.highlight h3,
+    .program-box.highlight p {
+        color: #000;
     }
 }
