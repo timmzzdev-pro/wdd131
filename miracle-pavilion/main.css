@@ -485,57 +485,100 @@ form button:hover {
     border-radius: 50%;
 }
 
-/* ================= MOBILE (PROFESSIONAL FIX) ================= */
+/* ================= CLEAN MOBILE FIX ================= */
 @media (max-width: 768px) {
 
-    /* HERO: allow full content */
+    /* ===== HEADER FIX ===== */
+    .nav-bar {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nav-bar h2 {
+        font-size: 1rem;
+    }
+
+    nav {
+        margin-top: 5px;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+        margin: 0 6px;
+    }
+
+    .logo {
+        width: 35px;
+    }
+
+    /* ===== HERO FIX ===== */
     .program-hero {
+        position: relative;
         height: auto;
-        /* 🔥 VERY IMPORTANT */
-        max-height: none;
         overflow: visible;
-        /* 🔥 SHOW ALL CARDS */
         padding-bottom: 20px;
+    }
+
+    /* Reduce image height */
+    .program-hero-img {
+        position: relative;
+        height: 35vh;
+        object-fit: cover;
+    }
+
+    /* Keep overlay but lighter */
+    .program-hero::after {
+        display: none;
     }
 
     /* TEXT */
     .program-hero-content {
-        top: 30%;
-        transform: translate(-50%, -30%);
-        width: 95%;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        width: 90%;
     }
 
     .program-hero-content h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .program-hero-content p {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 
-    /* GRID: balanced layout */
+    /* ===== CRITICAL FIX: REMOVE ABSOLUTE CARDS ===== */
     .program-overlay {
-        position: absolute;
-        bottom: 10px;
-        width: 95%;
-        gap: 10px;
+        position: relative;
+        /* 🔥 THIS FIXES EVERYTHING */
+        margin-top: 20px;
+        transform: none;
+        left: unset;
+        bottom: unset;
+        width: 100%;
 
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        /* 2 per row */
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 15px;
     }
 
     /* CARDS */
     .program-box {
-        padding: 14px;
-        font-size: 0.85rem;
+        padding: 16px;
+        font-size: 0.9rem;
     }
 
-    .program-box h3 {
-        font-size: 1rem;
+    /* ===== FOOTER FIX ===== */
+    .site-footer {
+        position: relative;
+        margin-top: 30px;
     }
 
-    .program-box p {
-        font-size: 0.8rem;
+    /* ===== BODY SCROLL FIX ===== */
+    body {
+        overflow-x: hidden;
     }
 }
