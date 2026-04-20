@@ -16,8 +16,9 @@ body {
 
 html,
 body {
-    min-height: 100%;
+    height: 100%;
 }
+
 
 main {
     flex: 1;
@@ -493,14 +494,7 @@ form button:hover {
     padding: 8px;
     border-radius: 50%;
 }
-.program-overlay {
-    position: relative !important;
-}
 
-.program-hero {
-    height: auto !important;
-    overflow: visible !important;
-}
 @media (max-width: 768px) {
 
     .nav-bar {
